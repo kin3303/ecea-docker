@@ -5,7 +5,11 @@
 이미지 생성 :
 
 Step 1. git clone https://github.com/kin3303/ecea-docker.git
-
+Step 2. Sharefile 에서  Container 릴리즈 gzip 파일을 다운받아 ecloud.tar.gz 를 추출
+Step 3. ecloud.tar.gz 파일을 빌드를 원하는 타입의 Dockerfile 위치로 붙여넣기
+  - [*ClusterManager*](https://github.com/kin3303/ecea-docker/blob/master/dockerfiles/cm)
+  - [*Agent*](https://github.com/kin3303/ecea-docker/tree/master/dockerfiles/agent)
+  - [*Emake*](https://github.com/kin3303/ecea-docker/tree/master/dockerfiles/agent)  
 Step 2. build.sh 파일을 이용하여 도커 이미지를 빌드
 
 Examples :
