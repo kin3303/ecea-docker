@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y gcc g++ netbase
 # ---------------------------------------------------
 #2
 ADD  ecloud.tar.gz /
+ADD  labs.tar.gz /
 #3
 COPY rules /opt/ecloud/rules
 # ---------------------------------------------------
