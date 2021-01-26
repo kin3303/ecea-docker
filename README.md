@@ -1,37 +1,30 @@
 
 # EC Accelerator
-Docker containers with Electric-Accelerator components
-   
- [*ClusterManager*](https://github.com/Muxamedin/ecea-docker/blob/master/dockerfiles/cm)
  
- [*Agent*](https://github.com/Muxamedin/ecea-docker/blob/master/dockerfiles/agent) 
- 
- [*EMake*](https://github.com/Muxamedin/ecea-docker/blob/master/dockerfiles/emake)
-
   
-To create an image :
+이미지 생성 :
 
-Step 1. Run software install on machine where docker image needs to be prepared
+Step 1. git clone https://github.com/kin3303/ecea-docker.git
 
-Step 2. Use build.sh to prepare /opt and output a docker image
+Step 2. build.sh 파일을 이용하여 도커 이미지를 빌드
 
 Examples :
 
-Build agents image on RedHat
+RedHat 이미지 빌드
 
-```bash
-   cd ecea-docker/build ;
-  ./build.sh -c=/tmp/test -t=agent -s=rh
+```console
+   $ cd ecea-docker/build ;
+   $ ./build.sh -c=/tmp/test -t=agent -s=rh
 ```
 
-Build agents image on Ubuntu
+Ubuntu 이미지 빌드
 
 ```bash
    cd ecea-docker/build ;
   ./build.sh -c=/tmp/test -t=agent -s=ubuntu
 ```
 
-Build agents image on CentOS
+CentOS 이미지 빌드
 
 ```bash
    cd ecea-docker/build ;
